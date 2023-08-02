@@ -1,0 +1,44 @@
+header {
+    width: calc(100% - 60px);
+    height: 100px; display:flex; 
+    flex-flow:row nowrap; justify-content: space-between;
+    align-items: center;
+    background: aqua;
+    margin:0 auto;
+    
+}
+header h1 {}
+header h1 a {}
+header h1 a img {width:10.5rem;}
+header .right{
+    display: flex; flex-flow: row nowrap; align-items: center;  justify-content: space-between;
+}
+header .right .lang{margin-right: 20px; font-weight: 600; }
+header .right #searchFrm{}
+header .right #searchFrm fieldset{}
+header .right #searchFrm fieldset #search_box{ 
+    width:350px; display:flex; flex-flow: row nowrap; 
+    align-items: center; justify-content: space-between;
+    
+}
+header .right #searchFrm fieldset #search_box #search{
+    border-radius: 10px; padding:10px; width:1000px;
+    background: #000;  color:white;   
+}
+header .right #searchFrm fieldset #search_box #search::placeholder{
+    color:#eee; font-size: 0.8rem; 
+}
+header .right #searchFrm fieldset #search_box #searchBtn{
+    width:24px; height: 24px; 
+    position: relative; right:60px;  background:none;
+}
+header .right #searchFrm fieldset #search_box #searchBtn{width:100%;}
+header .right #cart, header .right #nav {
+    margin-left: 20px;
+}
+header .right #login {margin-left:-60px;}
+header .right #login img {}
+header .right #cart {}
+header .right #cart img {}
+header .right #nav {}
+header .right #nav img {}
