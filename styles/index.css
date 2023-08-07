@@ -54,18 +54,18 @@ main .visual video {
 /* 3. 상대크기가 아닌 절대크기값(px) 크기를 설정해서 화면 해상도에 영향을 받지않는 방법 */
 
 main .adver_bnr {
-    background: url(../images/Untitled-1.jpg) center no-repeat; 
+    background: url(../images/Untitled-1.jpg) no-repeat; 
     height: 300px; position: relative;
     }
 main .adver_bnr .txt {
-    position: absolute; left:125px; top:70px;
-    color:#fff;
+    position: absolute; left:200px; top:70px;
+    color:#fff; max-width:1200px; margin:0 auto;
 }
 main .adver_bnr .txt p {
     font-size: 1.4rem;
 }
 main .adver_bnr .txt h1 {
-    font-size: 2.5rem; margin:15px 0 25px;
+    font-size: 2.5rem; margin:15px 0 25px; font-weight: 600;
 }
 main .adver_bnr .txt a {
     font-size: 1.05rem; padding: 0.25rem 2rem;
@@ -75,9 +75,69 @@ main .adver_bnr .txt a {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
     color:#fff
 }
-main .adver_bnr .txt a:nth-child(1){
+/*온라인 서비스*/
+main #online_service {
+    margin-top:93px; 
+    background: url(../images/sercive_bg1.jpg) center no-repeat; background-size: 85%;
+    padding-top:60px; background-position:right center;
+}
+main #online_service .txt1 {
+    padding:90px 0 206px 145px;  letter-spacing: -0.037rem; 
+    display: flex; flex-flow: column nowrap; justify-content: start;
+    width:827px; background-color: #fff; margin-right: auto;
+
+}
+main #online_service .txt1  h1{
+    font-size: 2.5rem; font-weight: 600; 
+}
+main #online_service .txt1  p{ 
+    font-size: 1.05rem; font-weight: 400;  margin:15px 0 15px;
+    line-height: 30px;
+}
+main #online_service .txt1  .service_link{
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.30);
+    font-size: 1.05rem; 
+    padding:10px 30px;
+    background: #000; width:138px;
+    color:#fff;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+}
+main #online_service .txt1 .service_link:hover {
+    background: #fff; color:#000;
+    font-weight: 600; border: 1px solid black;
+    transform: scale(1.1);
+}
+
+/* 매장서비스*/
+main #shop_service {
+    background: url(../images/service_bg2.jpg) no-repeat center; background-size: 70%;
+    background-position:left 30%; padding-top:60px; margin-top:100px;
+}
+main #shop_service .txt2 {padding:90px 146px;  letter-spacing: -0.037rem; 
+    display: flex; flex-flow: column nowrap; justify-content: start; text-align: end;
+    width:827px; background-color:#fff;  margin-left:auto;
     
 }
-main .adver_bnr .txt a:nth-child(2){
-    
+main #shop_service .txt2 h1 { margin-right:20px;
+    font-size: 2.5rem; font-weight: 600; 
+}
+main #shop_service .txt2 p  {font-size: 1.05rem; font-weight: 500;  margin:15px 0 15px;
+    line-height: 30px;}
+main #shop_service .txt2 .store_link {
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.30);
+    margin-left: 290px;
+    font-size: 1.05rem; 
+    padding:10px 50px;
+    background: #000; width:250px;
+    color:#fff;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+}
+main #shop_service .txt2 .store_link:hover {
+    background: #fff; color:#000;
+    font-weight: 600; border: 1px solid black;
+    transform: scale(1.1);
 }
