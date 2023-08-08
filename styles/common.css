@@ -1,7 +1,7 @@
 /* common.css 모든 웹페이지 공통 css == common */
 /* common.css == header, footer, 공통영역 Design */
 /* Firefox */
-html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;}
+html {scrollbar-width: 10px;scrollbar-color: #222 #f1f1f1;}
 /* Opera */
 html::-o-scrollbar {width: 10px;}/*스크롤바 크기*/
 html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
@@ -92,4 +92,32 @@ header #open_nav nav a:hover{
 header #open_nav nav a {
     margin-bottom:40px; font-size: 2.5rem;
     font-weight: 600; 
+}
+/* footer */
+footer {
+    width:calc(100% - 60px);
+    margin:auto;text-align:left;
+}
+footer .f_menu {display:flex; flex-flow:row nowrap; justify-content: start;}
+footer .f_menu dl {}
+footer .f_menu .service{}
+footer .f_menu .law{}
+footer .f_menu .sns{}
+footer .f_menu dt {margin:60px 240px 25px 0; font-weight: 600;}
+footer .f_menu dd {line-height: 30px; }
+footer .f_menu dl dd a{font-size: 0.8rem; color:#b7afa5; }
+footer .f_menu dl dd a:hover{
+    color:#000;
+    font-weight: 600;
+}
+footer .f_copy {
+    display: flex; flex-flow: row nowrap; 
+    margin:85px 0 35px;
+}
+footer .f_copy .logo {margin-top:3px;}
+footer .f_copy .logo img {width: 70%;}
+footer .f_copy address {width: 400%; line-height: 25px; } 
+footer .f_copy address a:hover {
+    background:#000; color:#fff; 
+    border-radius: 20px; padding:5px 10px; 
 }

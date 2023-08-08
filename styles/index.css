@@ -107,7 +107,7 @@ main #online_service .txt1  .service_link{
 main #online_service .txt1 .service_link:hover {
     background: #fff; color:#000;
     font-weight: 600; border: 1px solid black;
-    transform: scale(1.1);
+    transform: scale(1.1); padding:20px;
 }
 
 /* 매장서비스*/
