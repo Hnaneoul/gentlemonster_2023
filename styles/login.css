@@ -1,0 +1,130 @@
+main{width:calc(100% - 60px); margin:0 auto; text-align: center;}
+main h1 {margin-top:43px; font-size: 2.5rem;
+    font-weight: 600;} 
+main .img {}
+main .img img {width: 100%; margin-top:93px;}
+main #center{
+    display:flex; flex-flow: row nowrap;
+    justify-content: center;
+}
+/* 로그인 left */
+main .left {
+    width:calc(100% - 45px);
+    padding:87px 0 42px; margin:0 auto; text-align: center; 
+}
+main #center #OMG{max-width: 600px; margin:0 auto; text-align: center;}
+main .left h2 {
+    font-size: 1.85rem;
+    font-weight: 500;}
+main .left #user {}
+main .left #user fieldset {}
+main .left #user fieldset input {
+    border:1px solid #d2d2d2;
+    border-radius: 60px;
+    width:500px;
+    padding: 0.9rem 24.65rem 0.9rem 1.45rem;
+    align-items: center;}
+main .left #user fieldset input:nth-of-type(1){
+    margin:42px 0 35px;
+}
+main .left .maintain {
+    display: flex; flex-flow:row nowrap;
+    margin:21px 0 0 60px;
+}
+main .left .maintain .check_box {}
+main .left .maintain #chk2 {margin-right: 10px;}
+main .left .login {
+    
+    margin:25px auto; 
+    padding: 17px 210px; border-radius: 10px;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+}
+main .left .find {
+    display: flex; flex-flow: row nowrap;
+    margin-left: 55px; justify-content: space-between;
+}
+main .left .find .id_pw_find {display: flex; flex-flow: row nowrap;}
+main .left .find .id_pw_find .id_find {}
+main .left .find .id_pw_find span {
+    width: 0.05rem;
+    height: 1.35rem;
+    background-color: black;
+    margin:0 17px 0 17px;
+}
+main .left .find .pw_find {}
+main .left .find .new {margin-right:50px;}
+main .left .new_login {margin:76px 0 42px;}
+main .left .login:hover{
+    background: #000; color:#fff;
+}
+main .left .new_login .news_login {
+    }
+main .left #sns {
+    max-width: 500px; margin:0 auto;
+    display: flex; flex-flow: row nowrap; 
+    
+}
+main #center .left #OMG #sns a {margin-right:40px;  transition: all 0.3s;}
+main #center .left #OMG #sns a:first-child {margin:0 40px 0 80px;}
+main #center .left #OMG #sns a:last-child {margin-right:0;}
+main #center .left #OMG #sns a img {
+    width: 60px; height: 60px; border-radius: 40px;    
+}
+main #center .left #OMG #sns a:hover{
+    transform:scale(1.3); 
+}
+
+/* 로그인 right  */
+main .right{
+    width:calc(100% - 45px);
+    padding:87px 0 42px; margin:0 auto; text-align: center; 
+}
+main .right #OMG2{
+    max-width: 600px; margin:0 auto; text-align: center;
+}
+main .right h2{
+    font-size: 1.85rem;
+    font-weight: 500;}
+main .right #non_user{}
+main .right #non_user fieldset {
+    margin:42px 0 20px;
+}
+main .right #non_user fieldset input {
+    border-radius: 60px;
+    width:500px;
+    padding: 0.9rem 24.65rem 0.9rem 1.45rem;
+    margin-bottom:35px;
+    border: 1px solid #d2d2d2;
+}
+main .right #non_user fieldset input:last-child{
+    margin-bottom: 0;
+}
+main .right #OMG2 #non_fine{
+    display:flex; flex-flow: column nowrap;
+    
+}
+main .right #OMG2 #non_fine button{
+    width:500px;
+    margin:10px auto; 
+    padding: 17px 144px; border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #000;
+    color:#fff;
+}
+main .right #OMG2 #non_fine button:hover{
+    background: #fff; color:black; border:1px solid #000;
+}
+main .right #OMG2 #non_fine button:nth-of-type(2){
+    
+}
+main .right .p1 {margin:10px; font-size: 1.2rem; font-weight: 600;}
+main .right .p2 {color:dimgrey}
+main .right .p2, main .right .p1 { text-align: start; margin-left:50px; }
+
+
+@media (max-width:1065px) {
+
+}
