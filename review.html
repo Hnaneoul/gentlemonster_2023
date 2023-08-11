@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리뷰게시판 | 젠틀몬스터</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <style>
+        main { text-align: center;}
+        iframe {width:90%; height: 500px; margin-top:100px; } /* 인라인이라 마진auto가 안먹음 */
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <?php include('./header.php') ?>
+    <main>
+        <!-- 외부 웹주소(게시판, 지도 등)를 내부HTML로 삽입하는 방법 -->
+        <iframe src="http://neoul.dothome.co.kr/gnuboard5/bbs/board.php?bo_table=gentle_review" frameborder="0"
+        scrolling="no"></iframe>
+    </main>
+    <!-- footer -->
+    <?php include('./footer.php') ?>
+    <script src="./script/common.js"></script>
+</body>
+</html>

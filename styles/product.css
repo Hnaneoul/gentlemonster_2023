@@ -1,7 +1,42 @@
 main{
     width:calc(100% - 60px); margin:0 auto;
-    padding:30px;
+    padding:30px; 
 }
+/* 스와이퍼 슬라이드 */
+main #product_slide {margin-bottom: 100px;;}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    width:700px; height: 740px; margin:0 auto;
+}
+main #product_slide .swiper-wrapper .txt {
+    margin:533px 50px; width: 300px;
+    /* 초기 숨기기(이후 wiper 활용 서서히 나타나고 사라지기 기능추가) */
+    opacity:0; transition: opacity 2s, transform 2s;
+    transform: translateX(100px);
+    
+}
+main #product_slide .swiper-wrapper .txt dt{line-height: 2rem;}
+main #product_slide .swiper-wrapper .txt dt em{font-size: 2rem; font-weight: 600;}
+main #product_slide .swiper-wrapper .txt dd{line-height: 2rem; font-weight: 600;}
+main #product_slide .swiper-wrapper .slide1 {background: url(../images/model/model_01.jpg);}
+main #product_slide .swiper-wrapper .slide1 .txt {}
+main #product_slide .swiper-wrapper .slide5 .txt{color:#fff;}
+main #product_slide .swiper-wrapper .slide1 .txt dt {}
+main #product_slide .swiper-wrapper .slide1 .txt dt em { }
+main #product_slide .swiper-wrapper .slide1 .txt dd {}
+main #product_slide .swiper-wrapper .slide2 {background: url(../images/model/model_02.jpg);}
+main #product_slide .swiper-wrapper .slide3 {background: url(../images/model/model_03.jpg);}
+main #product_slide .swiper-wrapper .slide4 {background: url(../images/model/model_04.jpg);}
+main #product_slide .swiper-wrapper .slide5 {background: url(../images/model/model_06.jpg);}
+main #product_slide .swiper-wrapper .slide6 {background: url(../images/model/model_08.jpg);}
+/* 스와이퍼 스크롤바 디자인 */
+main #product_slide .swiper-scrollbar { 
+    position: relative; left:50%; bottom:20px; transform: translateX(-50%);
+    background: #fff; width:500px;
+} /*스크롤 배경*/
+main #product_slide .swiper-scrollbar-drag {
+    background: #000; position: absolute;
+} /*스크롤 막대*/
 /* 카테고리 */
 main #category{
     
@@ -100,6 +135,7 @@ main #product_list .container .c5_color .color3 {background: #004D15;}
 main #product_list .container .item_img img{ /*사진 이미지*/
     width:80%;
 }
-main #product_list .container .box{}
-main #product_list .container .box{}
-
+@keyframes txt {
+    0%{transform: translateX(200px);}
+    100%{transform: translateX(0);}
+}
