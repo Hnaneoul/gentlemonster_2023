@@ -1,0 +1,6 @@
+main {text-align: center;}
+#map {
+    width:700px; height: 500px; margin:30px auto;
+}
+main h1 {font-weight: 600; font-size: 1.5rem;}
+main p {line-height: 20px;}
